@@ -1,0 +1,58 @@
+ <!-- Header -->
+<%- include('./ejs/top.ejs', {
+    title: "한가원 인적성",
+    url: "../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('./ejs/header.ejs', {
+                url: "../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+        <div class="mainLayout">
+            <!-- 메인 콘텐츠 영역 -->
+            <div class="loginPg">
+                <p class="logTit">아이돌보미 <span>인적성검사</span></p>
+                <p class="logSub">
+                    개인정보 보호를 위해 <span>본인 기기에서만 이용</span>해 주세요.
+                </p>
+    
+                <div class="iptArea">
+                    <div class="id">
+                        <input type="text" id="iptId" title="아이디입력" placeholder="아이디를 입력해주세요.">
+                        <button type="button" class="resetBtn"><span class="hidden">입력삭제</span></button>
+                    </div>
+                    <div class="pw">
+                        <input type="password" id="iptPw" title="아이디입력" placeholder="비밀번호를 입력해주세요.">
+                        <button type="button" class="eyeBtn see"><span class="hidden">비밀번호 보기</span></button><!-- 클래스명 :  see = 보기 , hide = 숨기기 -->
+                    </div>
+                </div>
+    
+                <button type="button">로그인</button>
+            </div>
+            <!-- //메인 콘텐츠 영역 -->
+        </div>
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('./ejs/footer.ejs', {
+                url: "../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+<!-- 팝업이 들어오는 영역 -->
+
+<!-- Bottom -->
+<%- include('./ejs/bottom.ejs', { }) %>

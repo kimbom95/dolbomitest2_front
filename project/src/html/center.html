@@ -1,0 +1,114 @@
+ <!-- Header -->
+<%- include('./ejs/top.ejs', {
+    title: "한가원 인적성",
+    url: "../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+
+        </div>
+        <!-- //상단영역 -->
+        <div class="mainLayout">
+            <!-- 메인 콘텐츠 영역 -->
+
+            <!-- //메인 콘텐츠 영역 -->
+        </div>
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('./ejs/footer.ejs', {
+                url: "../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+<!-- 팝업이 들어오는 영역 -->
+<div class="modPopup type02 popOpen" id="clause03">
+    <div class="popupDim">딤 영역</div>
+    <div class="popupBox lg"><!--2024.09.24 팝업사이즈 표기 필수 sm (작은사이즈), lg(큰사이즈)-->
+        <!-- 팝업 타이틀 -->
+        <div class="popTitArea">
+            <!-- <div class="tit">타이틀</div> -->
+            <button class="closeBtn" onclick="popClose('clause03')">팝업 닫기</button>
+        </div>
+
+        <!-- 팝업 컨텐츠 -->
+        <div class="popContArea">
+            <div class="comClause">
+                <div class="loginPg">
+                    <p class="logTit">아이돌보미 <span>인적성검사</span></p>
+                    <p class="logSub"><span>센터담당자가 직접 입력해주세요.</span></p>
+            
+                    <div class="iptArea">
+                        <div class="id"> <!-- 센터 아이디 미입력 시, 알럿 호출 onclick="openAlert('center01');" -->
+                            <label for="iptId">센터 아이디(코드)</label>
+                            <input type="text" id="iptId" placeholder="센터 아이디(코드)를 입력해주세요.">
+                            <button type="button" class="resetBtn"><span class="hidden">입력삭제</span></button>
+                        </div>
+                        <div class="pw">  <!-- 센터 비밀번호 미입력 시, 알럿 호출 onclick="openAlert('center02');" -->
+                            <label for="iptPw">센터 비밀번호</label>
+                            <input type="password" id="iptPw" placeholder="비밀번호를 입력해주세요.">
+                            <button type="button" class="eyeBtn see"><span class="hidden">비밀번호 보기</span></button>
+                        </div>
+                         <!-- 센터 아이디&비밀번호 미입력 시, 알럿 호출 onclick="openAlert('center03');" -->
+                    </div>
+            
+                    <button type="button">인적성 검사 시작하기</button> <!-- 클릭 시, 검사 항목 팝업 호출 (testPart.html) -->
+                </div>                      
+            </div>
+
+        </div> 
+    </div>
+</div>
+
+
+<!-- 센터 아이디 미입력시 알럿 -->
+ <!-- addClass - on:팝업오픈 -->
+<!-- <div id="center01" class="modAlert"> 
+    <div class="alertArea">
+        <div class="alertTit">
+            <span>센터 아이디를 입력해주세요.​​​</span>
+        </div>
+        <div class="alertBtm">
+            <button class="btn dkBlue" onclick="closeAlert('center01');">확인</button>
+        </div>
+    </div>
+</div> -->
+
+<!-- 센터 아이디 미입력시 알럿 -->
+<!-- <div id="center02" class="modAlert"> 
+    <div class="alertArea">
+        <div class="alertTit">
+            <span>센터 비밀번호를 입력해주세요.​​​</span>
+        </div>
+        <div class="alertBtm">
+            <button class="btn dkBlue" onclick="closeAlert('center02');">확인</button>
+        </div>
+    </div>
+</div> -->
+
+<!-- 센터 아이디 또는 비밀번호 미입력시 알럿 -->
+<!-- <div id="center03" class="modAlert">
+    <div class="alertArea">
+        <div class="alertTit">
+            <span>아이디 또는 비밀번호를 확인 후 다시 입력 해주세요.​​</span>
+        </div>
+        <div class="alertBtm">
+            <button class="btn dkBlue" onclick="closeAlert('center03');">확인</button>
+        </div>
+    </div>
+</div> -->
+
+
+<!-- Bottom -->
+<%- include('./ejs/bottom.ejs', { }) %>

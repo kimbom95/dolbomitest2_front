@@ -1,0 +1,323 @@
+ <!-- Header -->
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<!-- 캐싱방지 -->
+	<!-- <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT"> -->
+	<!-- 모바일 상단,타이틀바,주소창 색변경(안드로이드에서 크롬,파폭,오페라,삼성브라우저만 가능) -->
+	<!-- <meta name="theme-color" content="#4285f4"> -->
+
+	<title>한가원 인적성</title>
+
+	<link rel="stylesheet" href="../common/css/default.css" />
+	<link rel="stylesheet" href="../common/css/common.css" />
+	<link rel="stylesheet" href="../common/css/swiper.css" />
+	<link rel="stylesheet" href="../common/css/tui-date-picker.css">
+	<link rel="stylesheet" href="../common/css/style.css" />
+	
+	<script src="../common/js/jquery-3.4.1.min.js"></script>
+	<script src="../common/js/jquery-ui.min.js"></script>
+	<script src="../common/js/tui-date-picker.js"></script>
+	<script src="../common/js/swiper.js"></script>
+	<script src="../common/js/common.js"></script>
+</head>
+<body>
+
+<!-- <div class="skip">
+	<a class="quickBtn" href="#container">본문바로가기</a>
+</div> -->
+<div class="wrap">
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+
+        </div>
+        <!-- //상단영역 -->
+        <div class="mainLayout">
+            <!-- 메인 콘텐츠 영역 -->
+
+            <!-- //메인 콘텐츠 영역 -->
+        </div>
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            
+
+
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+<!-- 팝업이 들어오는 영역 -->
+<!-- <div class="alertPop" style="display:none;">
+    <div class="dim"></div>
+    <div class="alertCov">
+        <div class="inner">
+            <p class="alertTxt">검사종료 10분전 입니다.</p>
+            <div class="buttonArea">
+                <button type="button">확인</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- 팝업이 들어오는 영역 -->
+<div class="modPopup type01 popOpen" id="clause01">
+    <div class="popupDim">딤 영역</div>
+    <div class="popupBox lg"><!--2024.09.24 팝업사이즈 표기 필수 sm (작은사이즈), lg(큰사이즈)-->
+        <!-- 팝업 타이틀 -->
+        <div class="popTitArea">
+            <!-- <div class="tit">타이틀</div> -->
+            <button class="closeBtn" onclick="popClose('clause01')">팝업 닫기</button>
+        </div>
+
+        <!-- 팝업 컨텐츠 -->
+        <div class="popContArea">
+            <div class="comClause">
+                <div class="testCover">
+                    <div class="titArea">
+                        <div class="txtTit">
+                            <img src="../images/test_logo_pc.png" alt="아이돌보미 인적성검사" class="pc"/>
+                            <img src="../images/test_logo_mo.png" alt="아이돌보미 인적성검사" class="tab"/>
+                        </div>
+                        <div class="testInfoArea">
+                            <div class="progArea">
+                                <span class="progBg">
+                                    <span class="progBar"></span>
+                                </span>
+                                <span class="progPrct">60%</span>
+                            </div>
+                            <div class="remainTime">
+                                <span class="timeIcon"><img src="../images/ico_time.png" alt="시계 아이콘 이미지"></span>
+                                <span class="time">90:00</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="stepArea">
+                        <ul>
+                            <li class="stepBtn done">
+                                <button type="button"><span class="stepTxt">STEP</span> 01</button>
+                                <span class="dotGrp">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </span>
+                            </li>
+                            <li class="stepBtn done">
+                                <button type="button"><span class="stepTxt">STEP</span> 02</button>
+                                <span class="dotGrp">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </span>
+                            </li>
+                            <li class="stepBtn ing">
+                                <button type="button"><span class="stepTxt">STEP</span> 03</button>
+                                <span class="dotGrp">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </span>
+                            </li>
+                            <li class="stepBtn">
+                                <button type="button"><span class="stepTxt">STEP</span> 04</button>
+                                <span class="dotGrp">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </span>
+                            </li>
+                            <li class="stepBtn lastBtn">
+                                <button type="button"><span class="stepTxt">STEP</span> 05</button>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="questArea">
+                        <ul>
+                            <li>
+                                <p class="qTense"><span class="cnt">1.</span><span>문제 1번 항목</span></p>
+                                <div class="ansBtnList">
+                                    <button type="button" class="btn01">전혀 아니다</button>
+                                    <button type="button" class="btn02">아니다</button>
+                                    <button type="button" class="btn03">보통이다</button>
+                                    <button type="button" class="btn04">그렇다</button>
+                                    <button type="button" class="btn05">매우 그렇다</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="qTense"><span class="cnt">2.</span><span>문제 2번 항목문제 2번 항목문제 2번 항목문제 2번 항목문제 2번 항목문제 2번 항목문제 2번 항목문제 2번 항목문제 2번 항목문제 2번 항목문제 2번 항목문제 2번 항목문제 2번 항목문제 2번 항목문제 2번 항목문제 2번 항목</span></p>
+                                <div class="ansBtnList">
+                                    <button type="button" class="btn01" disabled>전혀 아니다</button>
+                                    <button type="button" class="btn02" disabled>아니다</button>
+                                    <button type="button" class="btn03 on">보통이다</button>
+                                    <button type="button" class="btn04" disabled>그렇다</button>
+                                    <button type="button" class="btn05" disabled>매우 그렇다</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="qTense"><span class="cnt">3.</span><span>문제 3번 항목</span></p>
+                                <div class="ansBtnList">
+                                    <button type="button" class="btn01" disabled>전혀 아니다</button>
+                                    <button type="button" class="btn02" disabled>아니다</button>
+                                    <button type="button" class="btn03" disabled>보통이다</button>
+                                    <button type="button" class="btn04 on">그렇다</button>
+                                    <button type="button" class="btn05" disabled>매우 그렇다</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="qTense"><span class="cnt">4.</span><span>문제 4번 항목</span></p>
+                                <div class="ansBtnList">
+                                    <button type="button" class="btn01" disabled>전혀 아니다</button>
+                                    <button type="button" class="btn02" disabled>아니다</button>
+                                    <button type="button" class="btn03" disabled>보통이다</button>
+                                    <button type="button" class="btn04 on">그렇다</button>
+                                    <button type="button" class="btn05" disabled>매우 그렇다</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="qTense"><span class="cnt">5.</span><span>문제 5번 항목</span></p>
+                                <div class="ansBtnList">
+                                    <button type="button" class="btn01" disabled>전혀 아니다</button>
+                                    <button type="button" class="btn02" disabled>아니다</button>
+                                    <button type="button" class="btn03" disabled>보통이다</button>
+                                    <button type="button" class="btn04" disabled>그렇다</button>
+                                    <button type="button" class="btn05 on">매우 그렇다</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="qTense"><span class="cnt">6.</span><span>문제 6번 항목</span></p>
+                                <div class="ansBtnList">
+                                    <button type="button" class="btn01" disabled>전혀 아니다</button>
+                                    <button type="button" class="btn02 on">아니다</button>
+                                    <button type="button" class="btn03" disabled>보통이다</button>
+                                    <button type="button" class="btn04" disabled>그렇다</button>
+                                    <button type="button" class="btn05" disabled>매우 그렇다</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="qTense"><span class="cnt">7.</span><span>문제 7번 항목</span></p>
+                                <div class="ansBtnList">
+                                    <button type="button" class="btn01" disabled>전혀 아니다</button>
+                                    <button type="button" class="btn02 on">아니다</button>
+                                    <button type="button" class="btn03" disabled>보통이다</button>
+                                    <button type="button" class="btn04" disabled>그렇다</button>
+                                    <button type="button" class="btn05" disabled>매우 그렇다</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="qTense"><span class="cnt">8.</span><span>문제 8번 항목</span></p>
+                                <div class="ansBtnList">
+                                    <button type="button" class="btn01" disabled>전혀 아니다</button>
+                                    <button type="button" class="btn02" disabled>아니다</button>
+                                    <button type="button" class="btn03 on">보통이다</button>
+                                    <button type="button" class="btn04" disabled>그렇다</button>
+                                    <button type="button" class="btn05" disabled>매우 그렇다</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="qTense"><span class="cnt">9.</span><span>문제 9번 항목</span></p>
+                                <div class="ansBtnList">
+                                    <button type="button" class="btn01" disabled>전혀 아니다</button>
+                                    <button type="button" class="btn02" disabled>아니다</button>
+                                    <button type="button" class="btn03 on">보통이다</button>
+                                    <button type="button" class="btn04" disabled>그렇다</button>
+                                    <button type="button" class="btn05" disabled>매우 그렇다</button>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="qTense"><span class="cnt">10.</span><span>문제 10번 항목</span></p>
+                                <div class="ansBtnList">
+                                    <button type="button" class="btn01" disabled>전혀 아니다</button>
+                                    <button type="button" class="btn02" disabled>아니다</button>
+                                    <button type="button" class="btn03" disabled>보통이다</button>
+                                    <button type="button" class="btn04 on">그렇다</button>
+                                    <button type="button" class="btn05" disabled>매우 그렇다</button>
+                                </div>
+                            </li>
+                        </ul>
+        
+                        <div class="warnTxt">
+                            <span class="tooltip">
+                                <img src="../images/ico_exclam.png" alt="느낌표 이미지">
+                                <span>다음버튼</span>을 클릭하셔야<span>저장</span> 됩니다.
+                            </span>
+                        </div>
+                        <div class="proceedArea">
+                            <div class="lftBtn"><button type="button" class="prevBtn" disabled>이전</button></div> <!-- step1에선 비활성화 -->
+                            <div class="rytBtn"><button type="button" class="nextBtn">다음</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 검사시간 초과 알럿 -->
+<!-- <div id="test01" class="modAlert">
+    <div class="alertArea">
+        <div class="alertTit">
+            <span>인적성 검사 시간이 초과되어 검사를 중단합니다. ​담당자에게 문의 해주세요.​​​</span>
+        </div>
+        <div class="alertBtm">
+            <button class="btn dkBlue" onclick="closeAlert('test01');">확인</button>
+        </div>
+    </div>
+</div> -->
+
+<!-- 미선택 척도가 있을때 알럿 -->
+<!-- <div id="test02" class="modAlert"> 
+    <div class="alertArea">
+        <div class="alertTit">
+            <span>문제를 모두 선택 후 클릭해주세요.</span>
+        </div>
+        <div class="alertBtm">
+            <button class="btn dkBlue" onclick="closeAlert('test02');">확인</button>
+        </div>
+    </div>
+</div> -->
+
+<!-- 마침 버튼 알럿 -->
+<!-- <div id="test03" class="modAlert"> 
+    <div class="alertArea">
+        <div class="alertTit">
+            <span>마침 버튼 클릭 이후에는 수정이 불가합니다. ​다시 한번 확인 해 주세요.​ 인적성 검사를 완료 하시겠습니까?</span>
+        </div>
+        <div class="alertBtm">
+            <button class="btn gLine" onclick="closeAlert('test03');">취소</button>
+            <button class="btn dkBlue" onclick="closeAlert('test03');">완료</button>
+        </div>
+    </div>
+</div> -->
+
+
+<!-- Bottom -->
+
+</div>
+</body>
+
+
+</html>

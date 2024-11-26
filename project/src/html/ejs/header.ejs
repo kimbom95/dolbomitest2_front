@@ -1,0 +1,49 @@
+<%
+var url = locals.url ? locals.url : '../../';
+%>
+<div class="lyt-header">
+	<div class="head-area">
+		
+		<div class="mob-dim">딤 영역</div>
+		<div class="nav-area">
+			<h1 class="logo">
+				<a href="/index.html">
+					<img src="../../images/dolbomi_logo.png" alt="아이돌보미 인적성검사">
+				</a>
+			</h1>
+			<div class="main-nav">
+				<div class="mob-tit tab-view">
+					<a href="#" class="m-logo">
+						<img src="../../images/dolbomi_logo.png" alt="아이돌보미 인적성검사">
+					</a>
+					<button type="button" class="btn-close">닫기</button>
+				</div>
+				<div class="mob-navwrap">
+					<ul class="nav">
+						<li class="depth1">
+							<a href="#">로그인</a>
+						</li>
+						<li class="depth1">
+							<a href="#">인적성 검사</a>
+						</li>
+						<li class="depth1">
+							<a href="#">인적사항 입력</a>
+						</li>
+						<li class="depth1">
+							<a href="#">센터 담당자 정보 입력</a> 
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<div class="button-area member"><!--class: member 있을 시 로그인 버튼 비활성화, 로그아웃 버튼 활성화-->
+			<a href="#" class="go-login">로그인</a> <!-- 비로그인 클릭 시, 본인인증 팝업 호출 (certiLogin.html)  -->
+			<a href="#" class="go-user"><span class="userName">홍길동</span>님</a>
+			<a href="#" class="go-logout">로그아웃</a>
+			<button type="button" class="hambuger tab-view">전체 메뉴 열기</button>
+		</div>
+		
+	</div>
+</div>
+

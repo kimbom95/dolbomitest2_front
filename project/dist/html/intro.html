@@ -1,0 +1,145 @@
+ <!-- Header -->
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<!-- 캐싱방지 -->
+	<!-- <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT"> -->
+	<!-- 모바일 상단,타이틀바,주소창 색변경(안드로이드에서 크롬,파폭,오페라,삼성브라우저만 가능) -->
+	<!-- <meta name="theme-color" content="#4285f4"> -->
+
+	<title>한가원 인적성</title>
+
+	<link rel="stylesheet" href="../common/css/default.css" />
+	<link rel="stylesheet" href="../common/css/common.css" />
+	<link rel="stylesheet" href="../common/css/swiper.css" />
+	<link rel="stylesheet" href="../common/css/tui-date-picker.css">
+	<link rel="stylesheet" href="../common/css/style.css" />
+	
+	<script src="../common/js/jquery-3.4.1.min.js"></script>
+	<script src="../common/js/jquery-ui.min.js"></script>
+	<script src="../common/js/tui-date-picker.js"></script>
+	<script src="../common/js/swiper.js"></script>
+	<script src="../common/js/common.js"></script>
+</head>
+<body>
+
+<!-- <div class="skip">
+	<a class="quickBtn" href="#container">본문바로가기</a>
+</div> -->
+<div class="wrap">
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            
+<div class="lyt-header">
+	<div class="head-area">
+		
+		<div class="mob-dim">딤 영역</div>
+		<div class="nav-area">
+			<h1 class="logo">
+				<a href="/index.html">
+					<img src="../../images/dolbomi_logo.png" alt="아이돌보미 인적성검사">
+				</a>
+			</h1>
+			<div class="main-nav">
+				<div class="mob-tit tab-view">
+					<a href="#" class="m-logo">
+						<img src="../../images/dolbomi_logo.png" alt="아이돌보미 인적성검사">
+					</a>
+					<button type="button" class="btn-close">닫기</button>
+				</div>
+				<div class="mob-navwrap">
+					<ul class="nav">
+						<li class="depth1">
+							<a href="#">로그인</a>
+						</li>
+						<li class="depth1">
+							<a href="#">인적성 검사</a>
+						</li>
+						<li class="depth1">
+							<a href="#">인적사항 입력</a>
+						</li>
+						<li class="depth1">
+							<a href="#">센터 담당자 정보 입력</a> 
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<div class="button-area member"><!--class: member 있을 시 로그인 버튼 비활성화, 로그아웃 버튼 활성화-->
+			<a href="#" class="go-login">로그인</a> <!-- 비로그인 클릭 시, 본인인증 팝업 호출 (certiLogin.html)  -->
+			<a href="#" class="go-user"><span class="userName">홍길동</span>님</a>
+			<a href="#" class="go-logout">로그아웃</a>
+			<button type="button" class="hambuger tab-view">전체 메뉴 열기</button>
+		</div>
+		
+	</div>
+</div>
+
+
+        </div>
+        <!-- //상단영역 -->
+        <div class="mainLayout">
+            <!-- 메인 콘텐츠 영역 -->
+            <div class="introCover">
+                <img src="../images/intro_page.png" alt="하단 내용 참조">
+                <span class="irArea hidden">
+                    아이돌봄서비스-아이돌보미<br>
+                    아이돌보미 인적성 검사<br>
+                    돌보미의 능력과 소질을 파악 할 수 있습니다.<br>
+                    여러분의 평소 일상생활에 대한 질문, 여러분의 평소 생각이나 느낌에 대한 질문 들로 구성되어 있습니다. 여러분이 느끼고 생각하는대로 편안하고 솔직하게 응답해 주시기 바랍니다.<br>
+                    인적성 검사의 절차는 아래와 같습니다.
+                    STEP.01 - 회원가입 및 로그인
+                    STEP.02 - 검사진행
+                    STEP.03 - 분석결과 확인
+                </span>
+                <a href="#none" class="goToTest">
+                    <span class="hidden" onclick="popOpen('clause01')">인적성 검사 하러가기</span> <!-- 클릭 시, 팝업 호출 (personalInfo.html) -->
+                </a>
+            </div>
+            <!-- //메인 콘텐츠 영역 -->
+        </div>
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            
+
+
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+<!-- 검사 완료 알럿 2-2 -->
+<!-- addClass - on:팝업오픈 -->
+<!-- <div id="done01" class="modAlert">
+    <div class="alertArea">
+        <div class="alertTit">
+            <span>이미 검사를 완료하였습니다.​</span>
+        </div>
+        <div class="alertBtm">
+            <button class="btn dkBlue" onclick="closeAlert('done01');">확인</button>
+        </div>
+    </div>
+</div> -->
+
+<!-- Bottom -->
+
+</div>
+</body>
+
+
+</html>
