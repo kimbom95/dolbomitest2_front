@@ -3,9 +3,9 @@
     font-family: "Pretendard";
     font-style: normal;
     font-weight: 200;
-    src: url("/common/webfont/Pretendard-thin.woff") format("woff"),
-      url("/common/webfont/Pretendard-thin.woff2") format("woff2"),
-      url("/common/webfont/Pretendard-thin.otf") format("opentype");
+    src: url("../../../src/common/webfont/Pretendard-thin.woff") format("woff"),
+      url("../../../src/common/webfont/Pretendard-thin.woff2") format("woff2"),
+      url("../../../src/common/webfont/Pretendard-thin.otf") format("opentype");
       
   }
 /* Pretendard Light */
@@ -13,9 +13,9 @@
 font-family: "Pretendard";
 font-style: normal;
 font-weight: 300;
-src: url("/common/webfont/Pretendard-Light.otf") format("woff"),
-    url("/common/webfont/Pretendard-Light.otf2") format("woff2"),
-    url("/common/webfont/Pretendard-Light.otf.otf") format("opentype");
+src: url("../../../src/common/webfont/Pretendard-Light.otf") format("woff"),
+    url("../../../src/common/webfont/Pretendard-Light.otf2") format("woff2"),
+    url("../../../src/common/webfont/Pretendard-Light.otf.otf") format("opentype");
     
 }
 /* Pretendard Regular */
@@ -23,27 +23,27 @@ src: url("/common/webfont/Pretendard-Light.otf") format("woff"),
 font-family: "Pretendard";
 font-style: normal;
 font-weight: 400;
-src: url("/common/webfont/Pretendard-Regular.woff") format("woff"),
-    url("/common/webfont/Pretendard-Regular.woff2") format("woff2"),
-    url("/common/webfont/Pretendard-Regular.otf") format("opentype");
+src: url("../../../src/common/webfont/Pretendard-Regular.woff") format("woff"),
+    url("../../../src/common/webfont/Pretendard-Regular.woff2") format("woff2"),
+    url("../../../src/common/webfont/Pretendard-Regular.otf") format("opentype");
 }
 /* Pretendard Medium */
 @font-face {
 font-family: "Pretendard";
 font-style: normal;
 font-weight: 500;
-src: url("/common/webfont/Pretendard-Medium.woff") format("woff"),
-    url("/common/webfont/Pretendard-Medium.woff2") format("woff2"),
-    url("/common/webfont/Pretendard-Medium.otf") format("opentype");
+src: url("../../../src/common/webfont/Pretendard-Medium.woff") format("woff"),
+    url("../../../src/common/webfont/Pretendard-Medium.woff2") format("woff2"),
+    url("../../../src/common/webfont/Pretendard-Medium.otf") format("opentype");
 }
 /* Pretendard Bold */
 @font-face {
 font-family: "Pretendard";
 font-style: normal;
 font-weight: 700;
-src: url("/common/webfont/Pretendard-Bold.woff") format("woff"),
-    url("/common/webfont/Pretendard-Bold.woff2") format("woff2"),
-    url("/common/webfont/Pretendard-Bold.otf") format("opentype");
+src: url("../../../src/common/webfont/Pretendard-Bold.woff") format("woff"),
+    url("../../../src/common/webfont/Pretendard-Bold.woff2") format("woff2"),
+    url("../../../src/common/webfont/Pretendard-Bold.otf") format("opentype");
 }
   
   * {box-sizing: border-box; font-family: 'Pretendard', sans-serif; letter-spacing: -0.05em;}
