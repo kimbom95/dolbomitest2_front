@@ -328,10 +328,9 @@ html,body {width:100%; height:100%;}
 .finTitle{font-size: 40px; font-weight: bold; display: block;}
 
 @media all and (max-width:750px){
-    .finCov{
-        padding: 0;
-    }
+    .finCov{padding: 0;}
     .finCov .finCont p.txt {font-size:30px; line-height:50px;}
+    .finCov .finCont .completeImg{width: 120px;}
 }
 
 @media all and (max-width:460px){
