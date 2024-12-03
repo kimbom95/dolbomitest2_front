@@ -322,9 +322,9 @@ html,body {width:100%; height:100%;}
 .finCov {width:100%; height:100%; padding-top: 30px; margin:0 auto; position:relative;}
 .finCov .finCont {width:100%; text-align:center;}
 .finCov .finCont img{padding-top: 30px;}
-.finCov .finCont p.txt {font-size:30px; color:#757575; font-weight:300; letter-spacing:-1.5px; margin:50px 0 30px 0;}
+.finCov .finCont p.txt {font-size:30px; color:#757575; font-weight:300; letter-spacing:-1.5px; margin: 30px 0;}
 .finCov .finCont p.txt span {font-weight:500; color:#000;}
-.finCov .finCont button.compBtn {padding:22px 56px 23px; background:#fe794d; border-radius:100px; font-size:30px; line-height:35px; letter-spacing:-0.9px; color:#fff; margin-top: 90px;}
+.finCov .finCont button.compBtn {padding:22px 56px 23px; background:#fe794d; border-radius:100px; font-size:30px; line-height:35px; letter-spacing:-0.9px; color:#fff; margin-top: 70px;}
 .finTitle{
     font-size: 42px; font-weight: bold; display: block;
 }
