@@ -321,6 +321,7 @@ html,body {width:100%; height:100%;}
 /* ------------------------------------------------------------------ */
 .finCov {width:100%; height:100%; margin:0 auto; position:relative;}
 .finCov .finCont {width:100%; text-align:center; padding: 70px 0 70px 0;}
+.finCov .finCont .completeImg{width: 180px;}
 .finCov .finCont p.txt {font-size:24px; color:#757575; font-weight:300; letter-spacing:-1.5px; margin-top: 30px; line-height: 60px;}
 .finCov .finCont p.txt span {font-weight:500; color:#000;}
 .finCov .finCont button.compBtn {padding:22px 56px 23px; background:#fe794d; border-radius:100px; font-size:30px; line-height:35px; letter-spacing:-0.9px; color:#fff; margin-top: 60px;}
