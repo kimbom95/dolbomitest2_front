@@ -335,7 +335,7 @@ html,body {width:100%; height:100%;}
 
 @media all and (max-width:460px){
     .finCov .finCont img {width:100px;}
-    .finCov .finCont p.txt {font-size:22px; line-height:30px; margin:30px 0;}
+    .finCov .finCont p.txt {font-size:22px; line-height:50px; margin:30px 0;}
     .finCov .finCont button.compBtn {padding:15px 30px 15px; font-size:24px; line-height:30px;}
 }
 
