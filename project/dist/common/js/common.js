@@ -210,3 +210,11 @@ function popClose(popId){
 }
 
 
+/* 24.12.05 kb 수정 */
+//알럿
+function openAlert($altName){
+    document.querySelector("#"+$altName).classList.add("on");
+}
+function closeAlert($altName){
+    document.querySelector("#"+$altName).classList.remove("on");
+}
