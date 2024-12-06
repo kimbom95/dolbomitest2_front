@@ -210,7 +210,7 @@ function popClose(popId){
 }
 
 
-/* 24.12.05 kb 수정 */
+/* 241206 kb 수정 */
 //알럿
 function openAlert($altName){
     document.querySelector("#"+$altName).classList.add("on");
@@ -218,3 +218,18 @@ function openAlert($altName){
 function closeAlert($altName){
     document.querySelector("#"+$altName).classList.remove("on");
 }
+
+/* 241206 kb 수정 */
+/* testPart.html - '다음'버튼 클릭 시 최상단으로 이동 */
+document.addEventListener('DOMContentLoaded', function () {
+    const scrollTopBtn = document.querySelector('.scrollTop');
+    if (scrollTopBtn) {
+        scrollTopBtn.addEventListener('click', function () {
+            const popupContent = document.querySelector('.popContArea');
+            if (popupContent) {
+                popupContent.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+            }
+        });
+    } else {}
+});

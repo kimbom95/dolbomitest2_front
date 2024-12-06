@@ -159,7 +159,7 @@ html,body {width:100%; height:100%;}
 /* ------------------------------------------------------------------ */
 .testCover {width:100%; max-width:1200px; margin:0 auto; position:relative;}
 /* .testCover .topInner {width:100%; max-width:1200px; position:sticky; background:#fff; z-index:9; height:210px;} */
-.testCover .titArea {width:100%; padding:32px 40px; box-shadow:0 4px 10px 0 rgba(0, 0, 0, 0.07); position:relative;}
+.testCover .titArea {width:100%; padding:32px 40px; box-shadow:0 4px 10px 0 rgba(0, 0, 0, 0.07); position: sticky; top: 0; background: #fff; z-index: 999;}
 .testCover .titArea .txtTit img {max-width:100%;}
 .testCover .titArea .txtTit img.pc {display:inline-block;}
 .testCover .titArea .txtTit img.tab {display:none;}
@@ -239,8 +239,9 @@ html,body {width:100%; height:100%;}
     .testCover .stepArea ul li span.dotGrp {display:none;}
 }
 
-.testCover .questArea {width:100%; height:calc(100dvh - 216px); padding: 0 40px;
-    /* overflow-y:scroll; */
+.testCover .questArea {width:100%; padding: 0 40px;
+    /* height:calc(100dvh - 96px); 
+    overflow-y:scroll; */
 }
 .testCover .questArea ul {width:100%; position:relative;}
 .testCover .questArea ul li {padding:50px 0; border-bottom:10px solid #f9f9f9;}
