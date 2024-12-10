@@ -59,7 +59,7 @@
                   font-size:20px; color:var(--txt-black);
                   b {color: #005ce6;}
               }
-              .closeBtn {margin-left: auto; width: 24px; height: 24px; font-size: 0; background: url(../../images/common/ico_pop_close.svg) center no-repeat;}
+              .closeBtn {margin-left: auto; margin-right: 20px; width: 24px; height: 24px; font-size: 0; background: url(../../images/common/ico_pop_close.svg) center no-repeat;}
 
               &.type02 {border-bottom:0;}
           }
@@ -68,7 +68,6 @@
               width: 100%; padding-top: 30px; display: flex; justify-content: center; align-items: center; column-gap: 10px;
               .popBtn {
                   display:inline-block;
-                  /* kb 2024-11-08 수정 */
                   width: 160px; 
                   height:56px; line-height:56px; padding: 0 40px; border-radius: 8px; font-size: 18px; text-align: center;
                   &.blue { background:var(--prm-color); color:var(--clr-white);}
@@ -87,7 +86,7 @@
           &::before {border-radius: 24px;}                     
           .popTitArea {
               width: 100%; display: flex; justify-content: flex-end; align-items: center;
-              .closeBtn {margin-left: auto; width: 24px; height: 24px; font-size: 0; background: url(../../images/common/ico_pop_close.svg) center no-repeat;}
+              .closeBtn {margin-left: auto; margin-right: 20px; width: 24px; height: 24px; font-size: 0; background: url(../../images/common/ico_pop_close.svg) center no-repeat;}
           }
 
           .popContArea {
