@@ -14,9 +14,9 @@ html,body {width:100%; height:100%;}
 /* ------------------------------------------------------------------ */
 /* ---------------------------- 검사진입로---------------------------- */
 /* ------------------------------------------------------------------ */
-.introCover {width:100%; max-width:1440px; position:relative; text-align:center; margin:0 auto; padding-top: 70px;}
+/* .introCover {width:100%; max-width:1440px; position:relative; text-align:center; margin:0 auto; padding-top: 70px;}
 .introCover img {max-width:100%; }
-.introCover .goToTest {position:absolute; bottom:6.5%; left:50%; transform: translateX(-50%); width:28%; height:8.6%; border-radius:50px; cursor: pointer;}
+.introCover .goToTest {position:absolute; bottom:6.5%; left:50%; transform: translateX(-50%); width:28%; height:8.6%; border-radius:50px; cursor: pointer;} */
 
 /* ------------------------------------------------------------------ */
 /* ----------------------------- 로그인 ----------------------------- */
@@ -348,19 +348,19 @@ html,body {width:100%; height:100%;}
 
 
 /* ------------------------------ 헤더 ------------------------------ */
-.lyt-header {width: 100%; height: 120px; /*padding-left: 470px;*/ margin-bottom: -4px; border-bottom: 1px solid #ddd; background: #fff; overflow: hidden; display: inline-block; position: fixed; top: 0; left: 0; z-index: 900;  transition: width 0.2s;}
-.lyt-header .head-area {width: 100%; /*max-width: 1260px;*/ max-width:1610px; padding-left:350px; margin:0 auto;}
+.lyt-header {width: 100%; height: 85px; margin-bottom: -4px; border-bottom: 1px solid #ddd; background: #fff; overflow: hidden;  position: fixed; top: 0; left: 0; z-index: 900;  transition: width 0.2s;}
+.lyt-header .head-area {width: 100%; max-width:1200px; height: 85px; padding-left:350px; margin:0 auto;}
 .lyt-header .head-area::after {display: block; content: ""; clear: both;}
 .lyt-header .mob-dim {display: none;}
 .lyt-header .nav-area {float: left; position: relative;}
-.lyt-header .nav-area .logo {width: 251px; height: 120px; padding: 30px 0; position: absolute; top: 0; left: -350px;}
-.lyt-header .nav-area .logo img {width: 100%;}
+.lyt-header .nav-area .logo {position: absolute; top: 0; left: -350px; height: 85px; display: flex; justify-content: center; align-items: center;}
+.lyt-header .nav-area .logo img {width: 100%; vertical-align: middle;}
 .lyt-header .nav-area .main-nav {height: 120px; display: none;}
 .lyt-header .nav-area .main-nav::after {display: block; content: "";clear: both;}
 .lyt-header .nav-area .main-nav .depth1 {padding: 45px 0; margin-right: 32px; float: left;}
 .lyt-header .nav-area .main-nav .depth1 a {font-size: 20px; font-weight: 500;}
 .lyt-header .nav-area .m-family {display: none;}
-.lyt-header .button-area {height:120px; padding:32px 0; float: right;overflow: hidden; transition: width 0.2s;}
+.lyt-header .button-area { float: right;overflow: hidden; transition: width 0.2s; line-height: 85px; height: 85px;}
 .lyt-header .button-area .go-login {width: 100px; height: 56px; margin-right: 10px; line-height: 56px; border-radius: 28px; text-align: center; font-weight: 500; font-size: 17px; color: #fff; display: inline-block; background: #fe794d;}
 .lyt-header .button-area .go-logout {width: 100px; height: 56px; margin-right: 10px; line-height: 56px; border-radius: 28px; text-align: center; font-weight: 500; font-size: 17px; color: #fff; display: inline-block; background: #bbb; display: none;}
 .lyt-header .button-area .apply-contest {width: 180px; height: 56px; padding-left: 30px; line-height: 56px; border-radius: 28px; text-align: center; font-weight: 500; font-size: 17px; display: inline-block; background: #fece00 url(../../images/icon_smile.png) 24px center no-repeat;}
@@ -370,11 +370,11 @@ html,body {width:100%; height:100%;}
 .lyt-header .button-area.member .go-logout {display: inline-block;}
 
 @media screen and (min-width: 100px) and (max-width: 1279px) {
-    .lyt-header {width: 100%; height: 73.3px; padding-left: 0; margin-bottom: 0; display: block; overflow:visible; transition: none;}
-    .lyt-header .head-area {width: 100%; max-width: none; padding: 0 20px; position: relative;}
+    .lyt-header {width: 100%; padding-left: 0; margin-bottom: 0; display: block; overflow:visible; transition: none;}
+    .lyt-header .head-area {width: 100%; height: 85px; max-width: none; padding: 0 20px; position: relative;}
     .lyt-header .mob-dim {width: 100%; height: 100vh; background: rgba(0,0,0,0.3); font-size: 0; position: fixed; top: 0; left: 0; right: 0; bottom: 0; display: block; opacity: 0; transition: all 0.5s;visibility: hidden;}
     .lyt-header .nav-area {position: static;}
-    .lyt-header .nav-area .logo {width: 155px; height: auto; padding: 17px 0 8px; position: static; left: 0;}
+    .lyt-header .nav-area .logo {width: 155px; position: static; left: 0; line-height: 4.3;}
     .lyt-header .nav-area .main-nav {display: block; width: 100%; max-width: 360px; height: 100vh; background: #fff; display: inline-block; position: fixed; top: 0; right: -360px; transition: all 0.5s; -webkit-overflow-scrolling: touch; visibility: hidden;}
     .lyt-header .nav-area .main-nav .mob-tit {width: 100%; height: 73.3px; padding: 0 20px; background: #fe794d;}
     .lyt-header .nav-area .main-nav .mob-tit::after {display: block; content: ""; clear: both;}
@@ -392,12 +392,9 @@ html,body {width:100%; height:100%;}
     .lyt-header .nav-area .m-family .with .f-logo {width: calc(50% - 10.5px); margin-right: 21px; float: left;}
     .lyt-header .nav-area .m-family .with .f-logo:last-child {margin-right: 0;}
     .lyt-header .nav-area .m-family .with .f-logo img {width: 100%;}
-    .lyt-header .button-area {padding: 15px 0;}
-    /* .lyt-header .button-area .go-login {width: 160px; height: 50px; margin-right: 0; line-height: 50px; font-size: 15px; position: absolute; top: 93px; right: -260px;transition: all 0.5s; visibility: visible;} */
     .lyt-header .button-area .go-user{font-size: 15px; margin-right: 15px;}
     .lyt-header .button-area .go-logout {
         height: 45px; line-height: 45px; font-size: 15px; width: 80px; margin-right: 0;
-        /* width: 160px; height: 50px; margin-right: 0; line-height: 50px; font-size: 15px; position: absolute; top: 93px; right: -260px;transition: all 0.5s; visibility: visible; */
     }
     .lyt-header .button-area .apply-contest {display: none;}
     .lyt-header .button-area .hambuger {width: 25px; height: 25px; background: url(../../images/icon_hambuger.png) center / 25px no-repeat; font-size: 0;}
@@ -406,36 +403,11 @@ html,body {width:100%; height:100%;}
     .lyt-header.nav-view .main-nav {right: 0;transition: all 0.5s; visibility: visible;}
     .lyt-header.nav-view .button-area .go-login {right: 100px;}
     .lyt-header.nav-view .button-area .go-logout {right: 100px;}  
-    
-    .lytLayout .layoutArea .mainLayout{margin-top: 73px;}
-
-    /* _com.scss */
-    .modPopup.type01 .popupBox{
-        padding: 24px 0px 30px 0px !important;
-    }
-    .modPopup.type02 .popupBox{
-        height: auto !important; padding-bottom: 80px !important;
-    }
-    .modPopup.popPersonal .popupBox{
-        padding: 24px 0px 0px 0px !important;
-    }
-    .modPopup.popPersonal .popupBox .popContArea{
-        border-radius: 0 0 24px 24px !important;
-    }
-    .modPopup.popPersonal .popupBox .popContArea .bgArea{
-        padding: 20px 0px 40px 0px;
-    }
-    .popCerti .finCov .finCont{
-        padding: 40px 0 0 0 !important;
-    }
 
 }
 
 
 /* 2024.11.25 kb 인적성 2차 css 수정 */
-.mainLayout{
-    margin-top: 120px; 
-}
 .testBtn{
     width: 350px; height:80px; line-height:80px; color:#fff; background:#fe794d; border:1px solid #fe794d; border-radius:100px; text-align:center; font-size:30px; font-weight:bold; letter-spacing:-0.9px; box-shadow: inset -10px -10px 5px rgba(0, 0, 0, 0.25); display: flex; justify-content: center; margin: 0 auto;
 }
@@ -457,4 +429,119 @@ html,body {width:100%; height:100%;}
 }
 .popFin .popContArea{
     overflow-x: inherit !important; overflow-y: inherit !important;
+}
+
+/* intro.html */
+body,html{
+    width: 100%; height: 100%;
+}
+.wrap{
+    background: url(../../images/mainBg.png) no-repeat; width: 100%; height: 100%; background-size: cover;
+}
+.mainArea{
+    max-width: 1200px; margin: 0 auto; padding: 0 150px; padding-top: 120px;
+}
+.txt{
+    display: flex; justify-content: space-between;
+}
+.txtLeft{
+    color: #fff;
+}
+.txtLeft .top{
+    font-size: 76px; font-weight: 100; line-height: 1.1; letter-spacing: 3px;
+}
+.txtLeft .top span{
+    font-weight: 700; display: block; letter-spacing: -1px; text-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+}
+.txtLeft .mid{
+    font-size: 24px; margin: 40px 0 30px 0; letter-spacing: 0.2px; word-break: keep-all;
+}
+.txtLeft .bot{
+    font-size: 17px; letter-spacing: 0.5px; word-break: keep-all;
+}
+.orderList{
+    display: flex; justify-content: space-between; align-items: center; padding: 0 30px; margin: 50px 0;
+}
+.orderList > li.list01 > ul{
+    background: #fff; width: 210px; height: 210px; border-radius: 50%; display: flex; justify-content: center; align-items: center; flex-direction: column;    position: relative;
+}
+.orderList > li.list01 > ul:nth-child(1)::after{
+    content: ''; display: block; background: url(../../images/ico_arr_r.png) no-repeat; width: 24px; height: 36px; position: absolute; right: -32%; top: 50%; transform: translateY(-50%);
+}
+.orderList > li:nth-child(3) > ul:nth-child(1)::after{
+    display: none;
+}
+.orderList > li.list01 > ul > li:nth-child(1){
+    font-size: 16px; font-weight: 700;
+}
+
+.orderList > li.list01 > ul > li:nth-child(2){
+    font-size: 24px; font-weight: 700; 
+}
+.orderList > li.list01 > ul > li:nth-child(3){
+    margin-top: 25px;
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 1279px) {
+
+    /* _com.scss */
+    .modPopup.type01 .popupBox{
+        padding: 24px 0px 30px 0px !important;
+    }
+    .modPopup.type02 .popupBox{
+        height: auto !important; padding-bottom: 80px !important;
+    }
+    .modPopup.popPersonal .popupBox{
+        padding: 24px 0px 0px 0px !important;
+    }
+    .modPopup.popPersonal .popupBox .popContArea{
+        border-radius: 0 0 24px 24px !important;
+    }
+    .modPopup.popPersonal .popupBox .popContArea .bgArea{
+        padding: 20px 0px 40px 0px;
+    }
+    .popCerti .finCov .finCont{
+        padding: 40px 0 0 0 !important;
+    }
+
+    /* intro.html */
+    body,html{
+        height: 155%;
+    }
+    .wrap{
+        height: 100%;
+    }
+    .mainArea{
+        width: 100%; padding: 0; max-width: 100%; padding: 120px 20px 40px 20px;
+    }
+    .txt{
+        flex-direction: column; text-align: left;
+    }
+    .txtLeft .top{
+        font-size: 60px;
+    }
+    .txtLeft .mid{
+        font-size: 24px; margin: 35px 0 25px 0; letter-spacing: 0;
+    }
+    .txtLeft .bot{
+        font-size: 18px;
+    }
+    .txtRight{
+        display: none;
+    }
+    .orderList{
+        margin-top: 60px; flex-direction: column;
+    }
+    .orderList > li{
+        margin-bottom: 100px;
+    }
+    .orderList > li:last-child{
+        margin-bottom: 0;
+    }
+    .orderList > li.list01 > ul:nth-child(1)::after{
+        right: 45%; top: unset; bottom: -32%; transform: rotate(90deg);
+    }
+
+
 }
