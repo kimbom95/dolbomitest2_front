@@ -134,20 +134,6 @@
       }
   }
 
-  &.qrPopup{
-    .popupBox{
-        padding: 30px 50px; max-height: 750px; height: 750px !important; padding-bottom: 0;
-        .popContArea{
-            overflow-x: unset; overflow-y: unset;
-        }
-        .popTitArea{
-            .closeBtn{
-                background: url(../../images/ico_close.png) no-repeat 0 0; width: 40px; height: 40px; margin-left: auto; font-size: 0;
-            }
-        }
-    }
-  }
-
 }
 
 /* ------------------------------------------------ Alert ----------------------------------------------- */

@@ -467,6 +467,18 @@ body,html{
     font-weight: 700; font-size: 16px; text-align: center; transform: translate3d(-6px,-25px,0); display: flex; justify-content: center;
 }
 
+.qrPopup{
+    position: relative;
+}
+.modPopup.qrPopup .popupBox{
+    padding: 30px 50px; max-height: 750px  !important; height: 750px !important; padding-bottom: 0;
+}
+.qrPopup .popupBox .popContArea{
+    overflow-x: unset; overflow-y: unset;
+}
+.qrPopup .popupBox .popTitArea .closeBtn{
+    background: url(../../images/ico_close.png) no-repeat 0 0 !important; width: 40px !important; height: 40px !important; margin-left: auto; font-size: 0; backgroun
+}
 .qrPopup .qrCom{
     display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;
 }
@@ -553,12 +565,11 @@ body,html{
         width: 120px;
     }
 
-
-    .qrPopup{
-        position: relative;
+    .modPopup.qrPopup .popupBox{
+        padding-bottom: 30px !important;
     }
     .qrPopup .popupBox{
-        margin: 20px !important; padding: 30px 20px !important; height: auto !important; max-height: auto !important;
+        margin: 20px !important; padding: 30px 20px 30px 20px !important; height: auto; max-height: auto;
     }
     .qrPopup .popupBox .popTitArea .closeBtn{
         position: absolute; left: 50%; top: -20px; transform: translate3d(-50%, 0, 0); z-index: 10;
