@@ -1,4 +1,4 @@
-/*====================================== 한가원 인적성 1차 css ======================================*/
+/*====================================== 한가원 인적성 2차 css ======================================*/
 
 
 /* ------------------------------------------------------------------ */
@@ -7,20 +7,12 @@
 /* .wrapper {width: 100%; height:100%; position:relative} */
 html,body {width:100%; height:100%;}
 .hidden {width:1px;height:1px;overflow:hidden;border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);display:inline-block;position:absolute;}
-/*2024.04.18 로딩 dim 추가*/
 .loadingDim {position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.4);z-index: 999;}
 .loader {border: 16px solid #f3f3f3;border-top: 16px solid #fe794d;border-radius: 50%;width: 120px;height: 120px;animation: spin 2s linear infinite;position: fixed;top: 50%;left: 50%;}
 @keyframes spin { 0% { transform: translate(-50%,-50%) rotate(0deg);} 100% { transform: translate(-50%,-50%) rotate(360deg);} }
-/* ------------------------------------------------------------------ */
-/* ---------------------------- 검사진입로---------------------------- */
-/* ------------------------------------------------------------------ */
-/* .introCover {width:100%; max-width:1440px; position:relative; text-align:center; margin:0 auto; padding-top: 70px;}
-.introCover img {max-width:100%; }
-.introCover .goToTest {position:absolute; bottom:6.5%; left:50%; transform: translateX(-50%); width:28%; height:8.6%; border-radius:50px; cursor: pointer;} */
 
-/* ------------------------------------------------------------------ */
-/* ----------------------------- 로그인 ----------------------------- */
-/* ------------------------------------------------------------------ */
+
+
 .popupBox {position:absolute; top:0; left:0; width:100%; height:100%;}
 .layerDim {position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:998;}
 .loginPg {
@@ -60,9 +52,7 @@ html,body {width:100%; height:100%;}
     .loginPg .logTit span {display:block;}
 
 }
-/* ------------------------------------------------------------------ */
-/* -------------------------- 인적사항입력 --------------------------- */
-/* ------------------------------------------------------------------ */
+
 .bgArea {position:relative; width:100%; max-width:1200px; margin:0 auto; background: url("../../images/personal_bg.png")100% 100% no-repeat; background-size:100% 100%; padding:50px 40px 80px 40px;}
 
 .bgArea .title_img {position:relative;}
@@ -111,7 +101,7 @@ html,body {width:100%; height:100%;}
 
 .bgArea .ctaBtn {width:100%; text-align:center;}
 
-/*20240507 이용약관 영역추가*/
+
 .policyBox {margin:15px 0 40px; background:#f7f7f7; padding:10px 10px 10px 30px; height:250px;}
 .policyBox > .policyCont {height:230px; overflow-y:scroll; padding:20px 20px 20px 0; font-size:18px; color:#757575; font-weight:400; line-height:30px; letter-spacing:-0.54px;}
 .policyBox > .policyCont::-webkit-scrollbar {width: 5px; }
@@ -154,11 +144,8 @@ html,body {width:100%; height:100%;}
     .bgArea .infoIpt .iptInner .dropdownCase button + div ul li a {line-height:50px; font-size:18px;}
 }
 
-/* ------------------------------------------------------------------ */
-/* ----------------------- 인적성검사문제페이지 ----------------------- */
-/* ------------------------------------------------------------------ */
+
 .testCover {width:100%; max-width:1200px; margin:0 auto; position:relative;}
-/* .testCover .topInner {width:100%; max-width:1200px; position:sticky; background:#fff; z-index:9; height:210px;} */
 .testCover .titArea {width:100%; padding:32px 40px; box-shadow:0 4px 10px 0 rgba(0, 0, 0, 0.07); position: sticky; top: 0; background: #fff; z-index: 999;}
 .testCover .titArea .txtTit img {max-width:100%;}
 .testCover .titArea .txtTit img.pc {display:inline-block;}
@@ -212,7 +199,6 @@ html,body {width:100%; height:100%;}
 @media all and (max-width:1200px) {
     .testCover .stepArea ul {gap:15px; justify-content: center;}
     .testCover .stepArea ul li span.dotGrp {justify-content: space-around;}
-    /* .testCover .stepArea ul li::before {width:30px; height:30px; background-size:30px 30px !important;} */
     .testCover .stepArea ul li span.dotGrp span:nth-of-type(2),
     .testCover .stepArea ul li span.dotGrp span:nth-of-type(3),
     .testCover .stepArea ul li span.dotGrp span:nth-of-type(4) {display:none;}
@@ -239,10 +225,7 @@ html,body {width:100%; height:100%;}
     .testCover .stepArea ul li span.dotGrp {display:none;}
 }
 
-.testCover .questArea {width:100%; padding: 0 40px;
-    /* height:calc(100dvh - 96px); 
-    overflow-y:scroll; */
-}
+.testCover .questArea {width:100%; padding: 0 40px;}
 .testCover .questArea ul {width:100%; position:relative;}
 .testCover .questArea ul li {padding:50px 0; border-bottom:10px solid #f9f9f9;}
 .testCover .questArea ul li p.qTense {font-size:28px; color:#000; font-weight:400; line-height:1; letter-spacing:-0.84px; margin-bottom:20px; display:flex; flex-flow:row nowrap; align-items: flex-start; justify-content: flex-start;}
@@ -264,9 +247,7 @@ html,body {width:100%; height:100%;}
 @media all and (max-width:640px) {
     .testCover .questArea {height:calc(100dvh - 133px);}
     .testCover .questArea {padding: 0;
-        /* overflow-y:scroll; */
     }
-    /* .testCover .questArea ul {padding:0 20px;} */
 }
 
 @media all and (max-width:550px) {
@@ -312,7 +293,7 @@ html,body {width:100%; height:100%;}
     .testCover .questArea .proceedArea button.nextBtn:disabled {background:#d9d9d9 url("../../images/ico_nxt.png")center right 30px no-repeat; color:#f7f7f7; }
 }
 
-/*테스트 페이지 알럿창 추가 20240405*/
+
 .alertPop {display:none;}
 .dim {position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8)}
 .alertCov {position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); width:400px; padding:30px; box-sizing:border-box; border-radius:15px; background:#fff; border:1px solid #dcdcdc; z-index:9999;}
@@ -321,9 +302,7 @@ html,body {width:100%; height:100%;}
 .alertCov .inner .buttonArea {display:flex; flex-flow:row nowrap; align-items: center; justify-content: center;}
 .alertCov .inner .buttonArea button {min-width:100px; padding: 10px 20px; font-size: 16px; font-weight: 500; border-radius: 4px; background:#fe794d; color:#fff; }
 
-/* ------------------------------------------------------------------ */
-/* ----------------------- 테스트완료안내페이지 ----------------------- */
-/* ------------------------------------------------------------------ */
+
 .finCov {width:100%; height:100%; margin:0 auto; position:relative;}
 .finCov .finCont {width:100%; text-align:center;padding: 70px 0 70px 0;}
 .finCov .finCont .completeImg{width: 180px;}
@@ -439,7 +418,7 @@ body,html{
     background: url(../../images/mainBg.png) no-repeat; width: 100%; height: 100%; background-size: cover;
 }
 .mainArea{
-    max-width: 1200px; margin: 0 auto; padding: 0 150px; padding-top: 200px;
+    max-width: 1200px; margin: 0 auto; padding: 0 150px; padding-top: 200px; position: relative;
 }
 .txt{
     display: flex; justify-content: space-between;
@@ -480,6 +459,31 @@ body,html{
 }
 .orderList > li.list01 > ul > li:nth-child(3){
     margin-top: 25px;
+}
+.qrCode{
+    position: absolute; right: 0; bottom: 40px; cursor: pointer;
+}
+.qrCode .qrTxt{
+    font-weight: 700; font-size: 16px; text-align: center; transform: translate3d(-6px,-25px,0); display: flex; justify-content: center;
+}
+
+.qrPopup .qrCom{
+    display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;
+}
+.qrPopup .qrCom .topTxt{
+    font-size: 22px; color: #222; font-weight: 500;
+}
+.qrPopup .qrCom .topTxt span{
+    font-weight: 700;
+}
+.qrPopup .qrCom .midImg{
+    padding: 30px 0 40px 0;
+}
+.qrPopup .qrCom .botTxt{
+    background: #fef1e8; font-size: 32px; border-radius: 30px; padding: 40px 70px; text-align: center; width: 100%;  font-weight: 500;
+}
+.qrPopup .qrCom .botTxt span{
+    font-weight: 700;
 }
 
 
@@ -541,6 +545,32 @@ body,html{
     }
     .orderList > li.list01 > ul:nth-child(1)::after{
         right: 45%; top: unset; bottom: -32%; transform: rotate(90deg);
+    }
+    .qrCode{
+        position: fixed; right: 0px; bottom: 100px;
+    }
+    .qrCode img{
+        width: 120px;
+    }
+
+
+    .qrPopup{
+        position: relative;
+    }
+    .qrPopup .popupBox{
+        margin: 20px !important; padding: 30px 20px !important; height: auto !important; max-height: auto !important;
+    }
+    .qrPopup .popupBox .popTitArea .closeBtn{
+        position: absolute; left: 50%; top: -20px; transform: translate3d(-50%, 0, 0); z-index: 10;
+    }
+    .qrPopup .qrCom .topTxt{
+        width: 200px; text-align: center; margin-top: 40px;
+    }
+    .qrPopup .qrCom .midImg img{
+        width: 300px; margin: 0 auto;
+    }
+    .qrPopup .qrCom .botTxt{
+        font-size: 26px; padding: 20px; width: 100%;
     }
 
 

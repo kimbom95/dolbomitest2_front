@@ -129,6 +129,12 @@
                     </li>
                 </ul>
                 <button type="button" class="testBtn">인적성 검사 하러가기</button> <!-- onclick="popOpen('test01')" 팝업 호출 -->
+                <!-- 25.01.06 kb 수정 -->
+                <div class="qrCode" onclick="popOpen('qrPop')">
+                    <img src="../images/qrcodeImg.png" alt="아이돌보미 인적성검사 모바일 QR코드 팝업창 바로가기">
+                    <span class="qrTxt">QR코드 검사하기</span>
+                </div> 
+                <!--// 25.01.06 kb 수정 -->
             </div>
             <!-- //메인 콘텐츠 영역 -->
         </div>
@@ -152,6 +158,28 @@
         <div class="alertBtm">
             <button class="btn dkBlue" onclick="closeAlert('done01');">확인</button>
         </div>
+    </div>
+</div>
+
+<!-- 25.01.06 kb 수정 -->
+<!-- 팝업이 들어오는 영역 -->
+<div class="modPopup type02 popOpen qrPopup" id="qrPop">
+    <div class="popupDim">딤 영역</div>
+    <div class="popupBox qr"><!--2024.09.24 팝업사이즈 표기 필수 sm (작은사이즈), lg(큰사이즈)-->
+        <!-- 팝업 타이틀 -->
+        <div class="popTitArea">
+            <button class="closeBtn" onclick="popClose('qrPop')">팝업 닫기</button>
+        </div>
+
+        <!-- 팝업 컨텐츠 -->
+        <div class="popContArea">
+            <div class="comClause qrCom">
+                <p class="topTxt">아이돌보미 인적성검사 모바일 <span>QR코드</span></p>
+                <p class="midImg"><img src="../images/qr.png" alt="아이돌보미 인적성검사 모바일 QR코드 주소"></p>
+                <p class="botTxt">모바일 검사 대상자는<br><span>QR코드를 스캔</span>해주세요.</p>
+            </div>
+        </div>
+
     </div>
 </div>
 
