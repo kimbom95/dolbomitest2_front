@@ -567,9 +567,10 @@ body,html{
 
     .modPopup.qrPopup .popupBox{
         padding-bottom: 30px !important;
+        /* height: 650px !important; max-height: 650px !important;  */
     }
     .qrPopup .popupBox{
-        margin: 20px !important; padding: 30px 20px 30px 20px !important; height: auto; max-height: auto;
+        margin: 20px !important; padding: 30px 20px 30px 20px !important; 
     }
     .qrPopup .popupBox .popTitArea .closeBtn{
         position: absolute; left: 50%; top: -20px; transform: translate3d(-50%, 0, 0); z-index: 10;
@@ -577,11 +578,14 @@ body,html{
     .qrPopup .qrCom .topTxt{
         width: 200px; text-align: center; margin-top: 40px;
     }
+    .qrPopup .qrCom .midImg{
+        padding: 25px 0;
+    }
     .qrPopup .qrCom .midImg img{
         width: 300px; margin: 0 auto;
     }
     .qrPopup .qrCom .botTxt{
-        font-size: 26px; padding: 20px; width: 100%;
+        font-size: 24px; padding: 20px; width: 100%;
     }
 
 
