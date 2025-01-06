@@ -567,7 +567,6 @@ body,html{
 
     .modPopup.qrPopup .popupBox{
         padding-bottom: 30px !important;
-        /* height: 650px !important; max-height: 650px !important;  */
     }
     .qrPopup .popupBox{
         margin: 20px !important; padding: 30px 20px 30px 20px !important; 
